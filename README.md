@@ -2,7 +2,7 @@
 
 This is your personal chatbot with Ollama.
 
-![Chatbod](https://github.com/fabioacarvalho/chatbot-ollama/blob/ui-api/.github/img/chatbot.png?raw=true)
+![Chatbod](https://github.com/fabioacarvalho/chatbot-ollama/blob/main/.github/img/chatbot.png?raw=true)
 
 ## TO-DO
 
