@@ -1,0 +1,40 @@
+{
+  "name": "ollama-chatbot",
+  "author": "Fabio Carvalho",
+  "version": "0.1.0",
+  "main": "./build/electron/main.js",
+  "scripts": {
+    "dump": "dump-stlite-desktop-artifacts",
+    "serve": "cross-env NODE_ENV=production electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.example.ollamachatbot",
+    "productName": "OllamaChatbot",
+    "files": ["build/**/*"],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities"
+    }
+  },
+  "devDependencies": {
+    "@stlite/desktop": "^0.69.2",
+    "cross-env": "^7.0.3",
+    "electron": "31.0.0",
+    "electron-builder": "^25.1.7"
+  },
+  "stlite": {
+    "desktop": {
+      "files": ["app.py"],
+      "entrypoint": "app.py"
+    }
+  }
+}
