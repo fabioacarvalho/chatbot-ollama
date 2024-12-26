@@ -2,16 +2,16 @@
 
 This is your personal chatbot with Ollama.
 
-[Chatbod](https://github.com/fabioacarvalho/chatbot-ollama/blob/ui-api/.github/img/chatbot.png)
+![Chatbod](https://github.com/fabioacarvalho/chatbot-ollama/blob/ui-api/.github/img/chatbot.png?raw=true)
 
 ## TO-DO
 
-[] - Setup ollama into docker-composer; <br>
-    [] - Change the url into app.py; <br>
-[] - Generate a desktop app with electron; <br>
-[] - Create a function to getting the context chat; <br>
-[] - Create a model to fining tuning the model with your own data and resources; <br>
-[] - Setup `async` at `function generate_response`;  <br>
+[ ] - Setup ollama into docker-composer; <br>
+    [ ] - Change the url into app.py; <br>
+[ ] - Generate a desktop app with electron; <br>
+[ ] - Create a function to getting the context chat; <br>
+[ ] - Create a model to fining tuning the model with your own data and resources; <br>
+[ ] - Setup `async` at `function generate_response`;  <br>
 
 ## How use this Project
 
