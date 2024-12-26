@@ -7,7 +7,7 @@ This is your personal chatbot with Ollama.
 ## TO-DO
 
 [ ] - Setup ollama into docker-composer; <br>
-    [ ] - Change the url into app.py; <br>
+    [ ] - Change the URL into .env; <br>
 [ ] - Generate a desktop app with electron; <br>
 [ ] - Create a function to getting the context chat; <br>
 [ ] - Create a model to fining tuning the model with your own data and resources; <br>
