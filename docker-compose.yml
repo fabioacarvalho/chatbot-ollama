@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    command: python main.py
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "5001:5001"
+    command: ollama run llama3
