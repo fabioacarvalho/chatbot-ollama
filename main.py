@@ -1,5 +1,5 @@
-from langchain_ollama import OllamaLLM
-from langchain_core.prompts import ChatPromptTemplate
+# from langchain_ollama import OllamaLLM
+# from langchain_core.prompts import ChatPromptTemplate
 
 
 template = """
@@ -18,9 +18,9 @@ Escreve a melhor resposta para sanar ou ajudar na duvida que foi passada.
 
 """
 
-model = OllamaLLM(model="llama3", server_url="http://host.docker.internal:5001")
-prompt = ChatPromptTemplate.from_template(template)
-chain = prompt | model
+# model = OllamaLLM(model="llama3", server_url="http://host.docker.internal:5001")
+# prompt = ChatPromptTemplate.from_template(template)
+# chain = prompt | model
 
 
 def handle_conversation():
@@ -31,9 +31,9 @@ def handle_conversation():
         if question.lower() == "exit":
             break
 
-        result = chain.invoke({"context": context, "question": question})
-        print(result)
-        context = f"\nUser: {question}\nOllama: {result}"
+        # result = chain.invoke({"context": context, "question": question})
+        # print(result)
+        # context = f"\nUser: {question}\nOllama: {result}"
 
 
 if __name__ == "__main__":

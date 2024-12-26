@@ -4,13 +4,13 @@ services:
     volumes:
       - .:/app
     ports:
-      - "8000:8000"
+      - "8501:8501"
     environment:
       - PYTHONDONTWRITEBYTECODE=1
       - PYTHONUNBUFFERED=1
-    command: python main.py
-  ollama:
-    image: ollama/ollama:latest
-    ports:
-      - "5001:5001"
-    command: ollama run llama3
+    command: streamlit run app.py
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   ports:
+  #     - "5001:5001"
+  #   command: ollama run llama3
